@@ -15,7 +15,7 @@ def upload(path, file, **opt)
 end
 
 def generate_calendar(dir)
-  c = Imas::ProducerSchedule::Client.new(File.expand_path(MONTHS, __FILE__))
+  c = Imas::ProducerSchedule::Client.new
   c.output_cal(dir)
 end
 
